@@ -1,0 +1,13 @@
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: symfony_bd
+    database_user: root
+    database_password: Xtreme0911
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: d2b6e40dc0e72a3ff71965cc291cff7cffd9ff7b
+    database_driver: pdo_mysql
+    database_path: null

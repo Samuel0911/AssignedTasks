@@ -1,0 +1,23 @@
+sam_user_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: SAMUserBundle:Default:index }
+
+sam_user_index:
+    path:     /user/index
+    defaults: { _controller: SAMUserBundle:User:index }
+
+sam_user_add:
+    path:     /user/add
+    defaults: { _controller: SAMUserBundle:User:add }
+
+sam_user_edit:
+    path:     /user/edit/{id}
+    defaults: { _controller: SAMUserBundle:User:edit }
+
+sam_user_view:
+    path:     /user/view/{id}
+    defaults: { _controller: SAMUserBundle:User:view }
+
+sam_user_delete:
+    path:     /user/delete/{id}
+    defaults: { _controller: SAMUserBundle:User:delete }
