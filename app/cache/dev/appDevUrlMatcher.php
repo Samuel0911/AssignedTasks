@@ -143,6 +143,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array (  '_controller' => 'SAM\\UserBundle\\Controller\\UserController::addAction',  '_route' => 'sam_user_add',);
             }
 
+            // sam_user_create
+            if ($pathinfo === '/user/create') {
+                if ($this->context->getMethod() != 'POST') {
+                    $allow[] = 'POST';
+                    goto not_sam_user_create;
+                }
+
+                return array (  '_controller' => 'SAM\\UserBundle\\Controller\\UserController::createAction',  '_route' => 'sam_user_create',);
+            }
+            not_sam_user_create:
+
             // sam_user_edit
             if (0 === strpos($pathinfo, '/user/edit') && preg_match('#^/user/edit/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'sam_user_edit')), array (  '_controller' => 'SAM\\UserBundle\\Controller\\UserController::editAction',));

@@ -1,6 +1,6 @@
 <?php
 
-/* WebProfilerBundle:Profiler:table.html.twig */
+/* @WebProfiler/Profiler/table.html.twig */
 class __TwigTemplate_701522201514b56c644a0c2221b66415782919f27cbbc4bfb2275d132744d52d extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,8 +15,8 @@ class __TwigTemplate_701522201514b56c644a0c2221b66415782919f27cbbc4bfb2275d13274
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8ed7a6df3a73b4599d0b491bc79558bf2aea06b7ad4ac167dc49e4f724c3bcca = $this->env->getExtension("native_profiler");
-        $__internal_8ed7a6df3a73b4599d0b491bc79558bf2aea06b7ad4ac167dc49e4f724c3bcca->enter($__internal_8ed7a6df3a73b4599d0b491bc79558bf2aea06b7ad4ac167dc49e4f724c3bcca_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Profiler:table.html.twig"));
+        $__internal_cecec87e93b655522199dd774a2b8e3874b840b0eb933940a55d90ec96e249c2 = $this->env->getExtension("native_profiler");
+        $__internal_cecec87e93b655522199dd774a2b8e3874b840b0eb933940a55d90ec96e249c2->enter($__internal_cecec87e93b655522199dd774a2b8e3874b840b0eb933940a55d90ec96e249c2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/table.html.twig"));
 
         // line 1
         echo "<table ";
@@ -59,13 +59,13 @@ class __TwigTemplate_701522201514b56c644a0c2221b66415782919f27cbbc4bfb2275d13274
 </table>
 ";
         
-        $__internal_8ed7a6df3a73b4599d0b491bc79558bf2aea06b7ad4ac167dc49e4f724c3bcca->leave($__internal_8ed7a6df3a73b4599d0b491bc79558bf2aea06b7ad4ac167dc49e4f724c3bcca_prof);
+        $__internal_cecec87e93b655522199dd774a2b8e3874b840b0eb933940a55d90ec96e249c2->leave($__internal_cecec87e93b655522199dd774a2b8e3874b840b0eb933940a55d90ec96e249c2_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "WebProfilerBundle:Profiler:table.html.twig";
+        return "@WebProfiler/Profiler/table.html.twig";
     }
 
     public function isTraitable()

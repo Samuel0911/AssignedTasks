@@ -10,6 +10,11 @@ sam_user_add:
     path:     /user/add
     defaults: { _controller: SAMUserBundle:User:add }
 
+sam_user_create:
+    path:     /user/create
+    defaults: { _controller: SAMUserBundle:User:create }
+    methods: POST
+
 sam_user_edit:
     path:     /user/edit/{id}
     defaults: { _controller: SAMUserBundle:User:edit }
