@@ -26,3 +26,12 @@ sam_user_view:
 sam_user_delete:
     path:     /user/delete/{id}
     defaults: { _controller: SAMUserBundle:User:delete }
+
+#redireccionando la ruta en caso de poner querer acceder al form create 
+#redireccionamos hacia el form add
+sam_user_redirect_add:
+    path: /user/create
+    defaults:
+        _controller: SAMUserBundle:User:add
+        path: /user/add
+        permanent: true

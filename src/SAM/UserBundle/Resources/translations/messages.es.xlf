@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>New User</source>
+                <target>Nuevo Usuario</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>Username</source>
+                <target>Usuario</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>First name</source>
+                <target>Nombre</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>Last name</source>
+                <target>Apellido</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>Email</source>
+                <target>Correo electronico</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>Role</source>
+                <target>Rol</target>
+            </trans-unit>
+            
+
+            <trans-unit id="7">
+                <source>Your User Name</source>
+                <target>Nombre de Usuario</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>Your First name</source>
+                <target>Ingrese su nombre</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>Your Last name</source>
+                <target>Ingrese su apellido</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>Your Email</source>
+                <target>Ingrese su correo electronico</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>Your Password</source>
+                <target>Ingrese su password</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>Select a role</source>
+                <target>Seleccione un rol</target>
+            </trans-unit>
+            
+
+            <trans-unit id="13">
+                <source>Administrator</source>
+                <target>Administrador</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>User</source>
+                <target>Usuario</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>Active</source>
+                <target>Activo</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>Create User</source>
+                <target>Crear Usuario</target>
+            </trans-unit>
+
+
+
+        <!-- formulario Index.html.twig -->
+
+            <trans-unit id="17">
+                <source>Users</source>
+                <target>Usuarios</target>
+            </trans-unit>
+
+            <trans-unit id="18">
+                <source>Username</source>
+                <target>Usuario</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>First Name</source>
+                <target>Nombre</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>Last Name</source>
+                <target>Apellido</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>Email</source>
+                <target>Correo electronico</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>Role</source>
+                <target>Rol</target>
+            </trans-unit>
+        <!-- Combo box del Rol-->
+            <trans-unit id="23">
+                <source>Administrator</source>
+                <target>Administrador</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>User</source>
+                <target>Usuario</target>
+            </trans-unit>
+        <!-- Continuando con las cabeceras del formulario -->
+            <trans-unit id="25">
+                <source>Created</source>
+                <target>Creado</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>Updated</source>
+                <target>Actualizado</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>Actions</source>
+                <target>Acciones</target>
+            </trans-unit>
+
+        <!-- botones del formulario-->
+            
+            <trans-unit id="28">
+                <source>View</source>
+                <target>Ver</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>Edit</source>
+                <target>Editar</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>Delete</source>
+                <target>Eliminar</target>
+            </trans-unit>
+
+        <!-- Menu de navegacion-->
+            <trans-unit id="31">
+                <source>Assignments</source>
+                <target>Asignaciones</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>About</source>
+                <target>Quienes Somos</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>Users</source>
+                <target>Usuarios</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>List Users</source>
+                <target>Lista de Usuarios</target>
+            </trans-unit>        
+            <trans-unit id="35">
+                <source>New User</source>
+                <target>Crear Usuario</target>
+            </trans-unit>
+             <trans-unit id="36">
+                <source>Total records:</source>
+                <target>Total registros:</target>
+            </trans-unit>          
+
+        <!-- mensajes despues de crear el usuario -->
+            <trans-unit id="37">
+                <source>The user has been created.</source>
+                <target>El Usuario ha sido creado</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

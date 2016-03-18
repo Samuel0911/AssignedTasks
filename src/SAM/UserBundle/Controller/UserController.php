@@ -11,14 +11,24 @@ use SAM\UserBundle\Form\UserType;
 class UserController extends Controller
 {
     /*esta funcion indexAction renderiza el formulario de nuestros usuarios*/
-    public function indexAction()
+    public function indexAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $users = $em->getRepository('SAMUserBundle:User')->findAll();
+        //$users = $em->getRepository('SAMUserBundle:User')->findAll();
+
+
+        $dql = "SELECT u FROM SAMUserBundle:User u";
+        $users = $em->createQuery($dql);
+
+        $paginator = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $users, $request->query->getInt('page',1),
+            5
+        );
 
         return $this->render('SAMUserBundle:User:index.html.twig', array(
-            'users' => $users));
+            'pagination' => $pagination));
     }
 
     /*esta funcion AddAction Renderiza nuestro formulario del add user*/
@@ -29,7 +39,7 @@ class UserController extends Controller
 
         return $this->render('SAMUserBundle:User:add.html.twig', array(
             'form' => $form->createView()));        
-    }/*despues de crerar nuestro formulario usamos la consola para poder crear en una clase independiente
+    }/*despues de crerar nuestro formulario usamos la consola para poder crear una clase independiente
         ---> php app/console doctrine:generate:form SAMUserBundle:User
         esto nos crea un nuevo archivo userType.php (Form->userType.php)
      */
@@ -70,6 +80,11 @@ class UserController extends Controller
             $em = $this->getDoctrine()->getManager(); 
             $em->persist($user);
             $em->flush(); /** este metodo guarda los campos a nuestra base de datos*/
+
+            $successMessage = $this->get('translator')->trans('The user has been created.');
+            $this->addFlash('mensaje', $successMessage);
+
+
 
             return $this->redirectToRoute('sam_user_index'); /*redirigimos nuestra vista al index*/
         }

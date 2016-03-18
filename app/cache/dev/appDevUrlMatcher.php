@@ -169,6 +169,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'sam_user_delete')), array (  '_controller' => 'SAM\\UserBundle\\Controller\\UserController::deleteAction',));
             }
 
+            // sam_user_redirect_add
+            if ($pathinfo === '/user/create') {
+                return array (  '_controller' => 'SAM\\UserBundle\\Controller\\UserController::addAction',  'path' => '/user/add',  'permanent' => true,  '_route' => 'sam_user_redirect_add',);
+            }
+
         }
 
         // homepage
